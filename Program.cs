@@ -1,6 +1,7 @@
 ﻿
 
 //Day 1 - Measurements
+//If result is 0 - it's something wrong with data or diff variable
 Console.WriteLine(Day1(1));
 Console.WriteLine(Day1(2));
 
@@ -11,7 +12,6 @@ int Day1(int part)
     int amount = 0;
     if (part == 1) diff = 1;
     else if (part == 2) diff = 3;
-    else Console.WriteLine("Error");
 
     string fileName = "input.txt";
     string path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\..\Data\", fileName));
